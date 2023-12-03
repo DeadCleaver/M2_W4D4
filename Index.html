@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <header class="navbar">
+            <h1>Job Hunters</h1>
+        </header>
+        <div class="job-search-card">
+            <div class="input-box">
+                <label for="job-title-search-box">What?</label>
+                <input type="text" class="input-box" id="job-title-search-box" placeholder="What's your career choice?">
+            </div>
+            <div class="input-box">
+                <label for="job-location-search-box">Where?</label>
+                <input type="text" class="input-box" id="job-location-search-box"
+                    placeholder="Where do you wanna work?">
+            </div>
+            <button id="search-button" onclick="generateTable()">Search</button>
+        </div>
+        <div id="searchData"></div>
+        <div class="job-search-results" id="jobsearchbox">
+            <table class="job-search-results">
+                <tr class="table-header">
+                    <th>Position Offered</th>
+                    <th>Job Location</th>
+                </tr>
+                <tr></tr>
+                <tbody class="table-content" id="tabContent">
+                    <tr class="table-row">
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
